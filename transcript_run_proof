@@ -1,0 +1,76 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project toUpper
+vlog toUpper.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:17 on Nov 11,2025
+# vlog -reportprogress 300 toUpper.v 
+# -- Compiling module toUpper
+# 
+# Top level modules:
+# 	toUpper
+# End time: 22:42:17 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog test_toUpper.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:17 on Nov 11,2025
+# vlog -reportprogress 300 test_toUpper.v 
+# -- Compiling module test_toUpper
+# 
+# Top level modules:
+# 	test_toUpper
+# End time: 22:42:17 on Nov 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vsim test_toUpper
+# vsim test_toUpper 
+# Start time: 22:43:08 on Nov 11,2025
+# Loading work.test_toUpper
+# Loading work.toUpper
+add wave *
+run 400ns
+#  time | dec |     in (bin)     |     out (bin)    | in_char | out_char 
+# ----------------------------------------------------------------------
+#    0ns |  40 | 00101000 | xxxxxxxx |  (  |   
+#    4ns |  40 | 00101000 | 00x01000 |  (  |  
+#   15ns |  40 | 00101000 | 00001000 |  (  |  
+#   20ns |  72 | 01001000 | 00001000 |  H  |  
+#   24ns |  72 | 01001000 | 01001000 |  H  |  H
+#   40ns | 183 | 10110111 | 01001000 |  ·  |  H
+#   44ns | 183 | 10110111 | 10010111 |  ·  |  —
+#   60ns | 131 | 10000011 | 10010111 |  ƒ  |  —
+#   64ns | 131 | 10000011 | 10000011 |  ƒ  |  ƒ
+#   80ns | 124 | 01111100 | 10000011 |  |  |  ƒ
+#   84ns | 124 | 01111100 | 01011100 |  |  |  \
+#  100ns |  20 | 00010100 | 01011100 |    |  \
+#  104ns |  20 | 00010100 | 00010100 |    |  
+#  120ns | 235 | 11101011 | 00010100 |  ë  |  
+#  124ns | 235 | 11101011 | 11001011 |  ë  |  Ë
+#  140ns |  97 | 01100001 | 11001011 |  a  |  Ë
+#  144ns |  97 | 01100001 | 01000001 |  a  |  A
+#  160ns |  65 | 01000001 | 01000001 |  A  |  A
+#  180ns | 122 | 01111010 | 01000001 |  z  |  A
+#  184ns | 122 | 01111010 | 01011010 |  z  |  Z
+#  200ns |  71 | 01000111 | 01011010 |  G  |  Z
+#  204ns |  71 | 01000111 | 01000111 |  G  |  G
+#  220ns | 109 | 01101101 | 01000111 |  m  |  G
+#  224ns | 109 | 01101101 | 01001101 |  m  |  M
+#  240ns | 146 | 10010010 | 01001101 |  ’  |  M
+#  244ns | 146 | 10010010 | 10010010 |  ’  |  ’
+#  260ns |  48 | 00110000 | 10010010 |  0  |  ’
+#  264ns |  48 | 00110000 | 00010000 |  0  |  
+#  280ns | 207 | 11001111 | 00010000 |  Ï  |  
+#  284ns | 207 | 11001111 | 11001111 |  Ï  |  Ï
+#  300ns |  58 | 00111010 | 11001111 |  :  |  Ï
+#  304ns |  58 | 00111010 | 00011010 |  :  |  
+#  320ns | 123 | 01111011 | 00011010 |  {  |  
+#  324ns | 123 | 01111011 | 01011011 |  {  |  [
+#  340ns | 148 | 10010100 | 01011011 |  ”  |  [
+#  344ns | 148 | 10010100 | 10010100 |  ”  |  ”
+#  360ns | 127 | 01111111 | 10010100 |    |  ”
+#  364ns | 127 | 01111111 | 01011111 |    |  _
+# ** Note: $finish    : test_toUpper.v(38)
+#    Time: 400 ns  Iteration: 0  Instance: /test_toUpper
+# 1
+# Break in Module test_toUpper at test_toUpper.v line 38
+
+
